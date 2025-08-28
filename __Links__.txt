@@ -1,0 +1,20 @@
+https://api-ninjas.com/category/health-wellness
+https://publicapi.dev/open-food-facts-api
+https://publicapi.dev/the-meal-db-api
+https://world.openfoodfacts.org/
+
+
+https://rapidapi.com/UnitedAPI/api/lidl/pricing
+https://rapidapi.com/UnitedAPI/api/lidl/playground/apiendpoint_b4d2ad95-61e4-4919-90c7-bdfa73b077c8
+43ea150e16msh477fa9fea16ec01p1d9d22jsn83962764d56c
+ - recipes (https://api-ninjas.com/api/recipe)
+ - diets (https://api-ninjas.com/api/nutrition)
+
+
+https://flask.palletsprojects.com/en/stable/
+https://fastapi.tiangolo.com/#typer-the-fastapi-of-clis
+
+
+https://validator.w3.org/nu/#textarea - html validator
+https://jigsaw.w3.org/css-validator/ - css validator
+

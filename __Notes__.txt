@@ -1,0 +1,78 @@
+21 August 2025 - Project idea definition
+1st stage:
+  - database
+  - endpoint
+  - back-end (registration, user data, CRUD) - fast api documentation
+  - frontend (build a site using ChatGpt)
+  
+  
+28 August 2025 - Project idea definition
+- don't forget to check all the remarks from the submited projects
+- start with a template folder and helper functions
+- define and create a database structure
+
+Project Idea Definition:
+Build a smart closet that can easily manage the food products bought by a user.
+Features:
+ - the main purpose and feature of this application is monitoring expiration dates of the products and 
+   informing the user so that the product is used before expiration, and thus reducing the waste
+ - quick, easy and reliable insertion of data in the database (this can be achieved with scaning a barcode provided by the shop or farmacy). 
+   The barcode should include at least information such as product name or product id, price and expiration date, for all the bought products.
+   The rest of the information can be taken from an API (information such as nutrion value, image)
+ - providing the user with a beautiful and easy to use interface
+ - considering the food products that will expire soon, the application could provide the user with a list of recipes (and also consider diets)
+ - products removal is done either manually or automaticatlly when a provided recipe is accepted by the user
+Extra:
+ - this application can be expanded to other product types as well (medication, cleaning products, licenses, etc.)
+ - easy integrating with a Home assistant
+ - detect trends in products usage, and provide the user with promotions from their favourite shops and farmacies
+ - find a smarter and more reliable way to remove products from the active list
+ 
+ 
+Database definition:
+1. categories
+	•	category_id (PK)
+	•	category_name
+	
+2. nutrition
+	•	category_id (FK)
+	•	type
+
+3. stores
+	•	store_id (PK)
+	•	store_name
+	•	store_api_url
+
+4. products
+	•	product_id (PK)
+	•	product_name
+	•	product_img_url
+	•	product_nutrition_info [dictionary of properties]
+	•	product_price
+	•	store_id (FK)
+	•	category_id (FK → Categories)
+
+5. closets
+	•	closet_id (PK)
+	•	user_id (optional)
+	•	closet_location
+
+6. closet_products
+	•	closet_product_id (PK)
+	•	closet_id (FK)
+	•	product_id (FK)
+	•	product_qty
+	•   purchase_date
+	•	expiration_date
+	•	product_active
+
+
+Carbohydrate-rich (bread, rice, pasta)
+
+Protein-rich (meat, eggs, legumes, tofu)
+
+Fat-rich (oils, nuts, seeds, cheese)
+
+Fiber-rich (vegetables, whole grains)
+
+Sugary foods (sweets, desserts, soda)
