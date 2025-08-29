@@ -76,3 +76,75 @@ Fat-rich (oils, nuts, seeds, cheese)
 Fiber-rich (vegetables, whole grains)
 
 Sugary foods (sweets, desserts, soda)
+
+
+29 August 2025 - Project idea definition
+
+ - categories as a list?
+ - product price inside closet products
+ - link stores to closet products
+ - fix the tables relationships (one-2-one, one-2-many)
+
+consider using an OCR for reading receipts and inserting the data directly in the database
+ - 
+
+
+
+
+closet_product_id
+product_id
+product_name
+category_id
+product_img_url
+product_nutrition_info
+product_price
+product_qty
+purchase_date
+expiration_date
+product_active
+store_id
+closet_id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

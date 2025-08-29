@@ -2,6 +2,7 @@ https://api-ninjas.com/category/health-wellness
 https://publicapi.dev/open-food-facts-api
 https://publicapi.dev/the-meal-db-api
 https://world.openfoodfacts.org/
+https://publicapi.dev/open-food-facts-api
 
 
 https://rapidapi.com/UnitedAPI/api/lidl/pricing

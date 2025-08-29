@@ -1,5 +1,6 @@
 from helpers.sql.setup_database import Base, engine, session
-from models import Nutrition, Category, Store, Product, Closet, ClosetProduct
+from models import Category, Store, Closet, ClosetProduct
+
 
 # Define your ORM models here
 Base.metadata.create_all(engine)
@@ -49,6 +50,17 @@ def main():
         "SPAR Express",
         "Nah & frisch",
         "Tegut",
+    ]
+    closet_types = [
+        "Pantry",
+        "Refrigerator",
+        "Freezer",
+        "Cupboard",
+        "Kitchen Shelf",
+        "Basement Storage",
+        "Garage Storage",
+        "Garage Storage",
+        "Wine Cellar"
     ]
 
     for elements in categories:
