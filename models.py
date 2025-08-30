@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Float, ForeignKey, Text, DateTime, Boolean
 from sqlalchemy.orm import relationship
-from helpers.sql.setup_database import Base
+from helpers.sql.sqlalchemy_helper import Base
 
 
 class Closet(Base):
