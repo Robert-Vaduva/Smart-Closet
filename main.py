@@ -64,6 +64,7 @@ def add_product():
         print(f"{index}. {location[0]}")
     closet = int(input("Select storage: "))
     add_instance(format_product(barcode, quantity, PURCHASE_DATE, EXPIRATION_DATE, closet))
+    generate_web_site()
 
 
 def update_product():
@@ -78,6 +79,7 @@ def delete_product():
         if product.closet_product_id == index:
             delete_instance(product)
     list_products()
+    generate_web_site()
 
 
 def initiate_database():
@@ -112,7 +114,7 @@ def format_product(barcode, quantity, purchase_date, expiration_date, _closet):
     products = data.get("product", {})
 
     # pre-processing of the categories data
-    if len(products.get("categories_hierarchy")) >= 7:
+    if len(products.get("categories_hierarchy")) > 7:
         category = products.get("categories_hierarchy")[7]
     else:
         category = products.get("categories_hierarchy")[0]
